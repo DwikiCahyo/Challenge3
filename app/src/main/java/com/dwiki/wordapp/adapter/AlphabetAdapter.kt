@@ -24,6 +24,7 @@ class AlphabetAdapter(private val listAlphabet:ArrayList<Alphabet>):RecyclerView
     override fun onBindViewHolder(holder: ListViewHolder, position: Int) {
 
         val alphabet = listAlphabet[position]
+
         holder.binding.apply {
             tvAlphabetName.text = alphabet.alphabetName
             ivAlphabet.setImageResource(alphabet.imgAlphabet)

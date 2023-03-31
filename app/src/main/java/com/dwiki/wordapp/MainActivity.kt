@@ -19,7 +19,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun setupFragment() {
         supportFragmentManager.beginTransaction()
-            .add(R.id.container,ListAlphabetFragment())
+            .replace(R.id.container,ListAlphabetFragment())
             .commit()
     }
 }
